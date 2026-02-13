@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Portfolio | James Khaman</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<div id="nav-wrapper">
+  <div class="container">
+    <nav>
+      <img src="images/logo21.png" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+  </div>
+</div>
+
+<!-- HERO -->
+<header id="home">
+  <img src="images/profile-pic.jpg.PNG" class="profile-pic">
+
+  <h1>James Khaman</h1>
+
+<h3>
+  <span style="--i:4;" data-text="A Web Developer">A Web Developer</span>
+  <span style="--i:3;" data-text="A Graphic Designer">A Graphic Designer</span>
+  <span style="--i:2;" data-text="An Educator">An Educator</span>
+  <span style="--i:1;" data-text="A Content Creator">A Content Creator</span>
+</h3>
+
+  <p>I transform ideas into meaningful digital experiences<br> through design and technology.</p>
+  <a href="#contact" class="btn">Get in touch</a>
+
+</header>
+
+<!-- ABOUT -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/About-pic.JPG">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p class="content">I'm a Computer Science student | Tech enthusiast | Passionate about Youths empowerment and digital literacy to educate the masses (bridging the gap of connective divide) to bring about growth and <br>development through technology. <br>I am deeply interested in the emerginging field of Artificial Intelligence and currently building foundational skills in cybersecurity to combat the rise of digital crime.</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+          <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+          <p class="tab-links" onclick="opentab(event,'education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>UI/UX</span><br>Web & App Design</li>
+            <li><span>Web</span><br>Website Development</li>
+            <li><span>Graphic Design</span><br>Adobe Illustrator, Photoshop & Canva</li>
+            <li><span>Content Creation</span><br>Video Editing.</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2023–Present</span><br>UI/UX Training</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>16th/Aug/2025 - 20th/Nov/2025</span><br>Certificate in Computer digital literacy with BYBS</li>
+            <li><span>2023-Expected 2027</span><br>BsCs At Starford International University</li>
+            <li><span>2014-2015</span><br>U.C.E Crested Secondary Sch. Kampala, Ug</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="service-list">
+      <div><i class="fas fa-code"></i><h2>Web Design</h2></div>
+      <div><i class="fas fa-crop-alt"></i><h2>UI/UX Design</h2></div>
+      <div><i class="fab fa-app-store"></i><h2>App Design</h2></div>
+      <a href="gallery.html"><button class="button-6">See More</button></a>
+    </div>
+  </div>
+</div>
+
+
+<!-- CONTACT -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-envelope"></i> khamanjames7@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 0980 288 199 / 0922 111 117</p>
+
+        <!-- Social Icons under contact info -->
+        <div class="social-icons">
+  <!-- Facebook Messenger: opens chat directly -->
+  <a href="https://m.me/James Khaman" target="_blank" title="Message me on Facebook">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+  <!-- X / Twitter profile: opens your profile for follow -->
+  <a href="https://x.com/James Khaman🇸🇸✊🏿" target="_blank" title="Follow me on X">
+    <i class="fab fa-twitter"></i>
+  </a>
+
+  <!-- LinkedIn profile: opens your profile -->
+  <a href="https://www.linkedin.com/in/james-khaman" target="_blank" title="Connect on LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <!-- Instagram DM: opens direct message (mobile & web) -->
+  <a href="https://www.instagram.com/direct/new/?username=james_khaman" target="_blank" title="DM on Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+        <a href="my-cv.pdf.pdf" download class="btn btn4">Download CV</a>
+      </div>
+
+      <div class="contact-right">
+        <form 
+          name="submit-to-google-sheet" 
+          action="https://script.google.com/macros/s/AKfycbz-NW9ZpA0WBf9fx5k5Z0RK6Xb2ejJyPhxmY_8ZvzPTwhWSljsPEA5VuIFxnTLMhBaBdw/exec" 
+          method="POST" 
+          target="hidden_iframe" 
+          onsubmit="handleSubmit()"
+        >
+          <iframe name="hidden_iframe" style="display:none;"></iframe>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn3">Send Message</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright © James Khaman - Made with ❤️ & Passion</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(event, tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-180px";
+  }
+</script>
+
+<script>
+
+function handleSubmit() {
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  msg.style.color = "#61b752"
+  msg.textContent = "Message sent successfully ✔"
+
+  setTimeout(() => {
+    msg.textContent = ""
+  }, 3000)
+
+  // reset AFTER submission starts
+  setTimeout(() => {
+    form.reset()
+  }, 100)
+
+  .catch(error => {
+      msg.style.color = "red"
+      msg.innerHTML = "Something went wrong. Try again!"
+      console.error("Error!", error.message)
+  })
+
+}
+</script>
+
+</body>
+</html>
