@@ -336,6 +336,25 @@ header p{
 .work:hover .layer{ 
   opacity:1; 
 }
+/* Home icon styling */
+.home-link{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 12px;
+  border: 1px solid #ff004f;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 1;
+  transition: transform 0.5s ease;
+}
+
+.home-link:hover{
+      background: #e60045;
+      transform: translateY(-5px);
+}
 
 /* ================= CONTACT ================= */
 
@@ -604,4 +623,5 @@ nav .fas{
   color: #61b752;
   margin-top: 14px;
   display: block;
+
 }
